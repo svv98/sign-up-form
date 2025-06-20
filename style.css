@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'celtic';
+    src: url('./fonts/celtg___-webfont.woff2') format('woff2'),
+         url('./fonts/celtg___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'lemonmilk';
+    src: url('./fonts/lemonmilk-regular-webfont.woff2') format('woff2'),
+         url('./fonts/lemonmilk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('./fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('./fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'lemonmilklight';
+    src: url('./fonts/lemonmilk-light-webfont.woff2') format('woff2'),
+         url('./fonts/lemonmilk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotobolditalic';
+    src: url('./fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    display: flex;
+    margin: 0;
+    height:100vh;
+    width: 100vw;
+}
+
+.left{
+    background-image: url(./pics/jei-lee-0lL6Sox7n1Y-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c25253a;
+    width: 100%;
+    margin-top: calc(35vh - 100px);
+    padding: 10px 0;
+}
+.logo img{
+    height: 80px;
+}
+.logo .text{
+    color: white;
+    font-family: celtic;
+    font-size: 50px;
+}
+.left .credits{
+    font-family: roboto;
+    font-size: 12px;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    background-color: #292b154b;
+}
+.credits a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.right{
+    flex: 2;
+    width: 65vw;
+    background-color: #dee8e87e;
+}
+.quote{
+    box-sizing: border-box;
+    height: 35vh;
+    min-height: fit-content;
+    padding: calc(15vh - 1rem) 15vw 0 3vw;
+    flex: 2;
+}
+.quote>p{
+    font-family: roboto;
+    font-size: clamp(15px, 2vh, 30px);
+}
+p>span{
+    font-family: robotoitalic;
+}
+form{
+    height: 40vh;
+    min-height: fit-content;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+fieldset{
+    background-color: white;
+    border-top: 1px solid #d2ddddb7;
+    border-bottom: 2px solid #d2ddddb7;
+    border-left: none;
+    border-right: none;
+    padding: 0 15vw 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    box-shadow: 0 3px 10px 0 #b8bf5888;
+}
+fieldset h1{
+    margin: 3vh 0 0;
+    font-family: lemonmilk;
+    font-size: clamp(10px, 3vh, 30px);
+    color: #eca5c2;
+}
+label{
+    font-family: lemonmilklight;
+    font-size: clamp(10px, 1.7vh, 20px);
+}
+input{
+    border: 2px solid #b8bf582c;
+    border-radius: 5px;
+    height: fit-content;
+    font-family: roboto;
+    font-size: clamp(10px, 2vh, 30px);
+}
+input:focus{
+    outline: 2px solid #b5c01ed3;
+    border: 1px solid #9fddddd3;
+    box-shadow: 2px 3px 15px 0 #ecc0d3;
+    color: #757c09;
+}
+input:invalid{
+    outline: 2px solid #d07458;
+    border: 2px solid #e7a888;
+    box-shadow: 2px 3px 15px 0 #d48428;
+    color: #d07458;
+}
+
+.row1{
+    display: flex;
+    justify-content: left;
+    gap: 100px;
+}
+.row1 .first-nameDIV{
+    display: flex;
+    flex-direction: column;
+}
+.row1 .last-nameDIV{
+    display: flex;
+    flex-direction: column;
+}
+.row2{
+    display: flex;
+    justify-content: left;
+    gap: 100px;
+}
+.row2 .emailDIV{
+    display: flex;
+    flex-direction: column;
+}
+.row2 .phoneDIV{
+    display: flex;
+    flex-direction: column;
+}
+.row3{
+    display: flex;
+    justify-content: left;
+    gap: 100px;
+}
+.row3 .passwordDIV{
+    display: flex;
+    flex-direction: column;
+}
+.row3 .confirmDIV{
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    margin: 3vh 0 1vh 3vw;
+    height: fit-content;
+    width: fit-content;
+    padding: 1vh 1vw;
+    font-family: lemonmilk;
+    font-weight: 800;
+    font-size: clamp(10px, 2vh, 20px);
+    background-color: #eca5c2;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #da87a962;
+}
+form button:hover{
+    background-color: white;
+    color: #eca5c2;
+    border-radius: 5px;
+    border: 2px solid #da87aa34;
+}
+
+.account{
+    margin: 1vh 0 0 3vw;
+    font-family: lemonmilklight;
+    font-size: clamp(10px, 1.8vh, 20px);
+}
+.account>a{
+    font-family: lemonmilk;
+    color: #e1b29b;
+}
